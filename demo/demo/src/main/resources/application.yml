@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          jwk-set-uri: http://localhost:9990/realms/master/protocol/openid-connect/certs
+  datasource:
+    url: jdbc:mysql://localhost:12345/spring_s2
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
